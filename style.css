@@ -26,6 +26,8 @@ body {
   padding: 2em;
   border-radius: 10px;
   gap: 1em;
+  box-shadow: 2px 2px darkslategrey;
+  border: solid white 1px;
 }
 
 .top-section {
@@ -44,7 +46,7 @@ body {
 .name-info h1,
 .name-info h2 {
   margin: 0;
-  font-size: 0.85em;
+  font-size: 0.75em;
 }
 
 .name-info h2 {
@@ -52,8 +54,9 @@ body {
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.3em;
   margin: 0;
+  gap: 2em;
 }
 
 p {
