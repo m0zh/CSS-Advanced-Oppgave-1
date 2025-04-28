@@ -93,3 +93,16 @@ p {
   grid-area: big2;
   background-color: rgb(51, 44, 44);
 }
+
+@media (max-width: 600px) {
+  .testimonials-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "big"
+      "small"
+      "sidebar"
+      "small2"
+      "big2";
+  }
+}
