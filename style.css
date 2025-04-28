@@ -1,79 +1,92 @@
 body {
-    min-height: 100dvh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    background-color: rgb(205, 225, 243);
-}
-
-h1, h2 {
-    font-size: 12px;
-}
-
-h3 {
-    font-size: 14px;
-}
-
-p {
-    font-size: 12px;
-}
-
-img {
-    border-radius: 100%;
-    width: 30px;
-}
-
-.flex-box {
-    display: flex;
-    flex-direction: row;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  background-color: rgb(205, 225, 243);
 }
 
 .testimonials-section {
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(2, 300px);
-    gap: 1em;
-    grid-template-areas: 
-        "big big small sidebar"
-        "small2 big2 big2 sidebar";
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 300px);
+  gap: 1em;
+  grid-template-areas:
+    "big big small sidebar"
+    "small2 big2 big2 sidebar";
 }
 
 .testimonial {
-    background-color: blue;
-    color: white;
-    padding: 1em;
-    border-radius: 10px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  background-color: blue;
+  color: white;
+  padding: 2em;
+  border-radius: 10px;
+  gap: 1em;
 }
 
-.testimonial h1 {
-    align-self: top;
+.top-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1em;
+}
+
+.top-section img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.name-info h1,
+.name-info h2 {
+  margin: 0;
+  font-size: 0.85em;
+}
+
+.name-info h2 {
+  opacity: 0.8;
+}
+
+h3 {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin: 0;
+  opacity: 75%;
+  font-weight: 500;
 }
 
 .big {
-    grid-area: big;
-    background-color: rgb(189, 104, 189);
+  grid-area: big;
+  background-color: rgb(118, 104, 189);
 }
 
 .small {
-    grid-area: small;
-    background-color: rgb(99, 113, 160);
+  grid-area: small;
+  background-color: rgb(101, 106, 120);
 }
 
 .sidebar {
-    grid-area: sidebar;
-    background-color: whitesmoke;
-    color: black;
+  grid-area: sidebar;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .small2 {
-    grid-area: small2;
-    background-color: white;
-    color: black;
+  grid-area: small2;
+  background-color: white;
+  color: black;
 }
 
 .big2 {
-    grid-area: big2;
-    background-color: rgb(51, 44, 44);
+  grid-area: big2;
+  background-color: rgb(51, 44, 44);
 }
